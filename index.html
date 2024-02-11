@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment02Scroll2See</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap')
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="slides">
+            <!-- <img src="images/tahmid.jpg" alt="tahmid i.e my picture"> -->
+            <h2>QuoteBox</h2>
+            <div class="quote-box" id="quoteBox1">
+                <p class="quote-text" id="quoteText1"></p>
+            </div>
+            <div class="color-buttons" id="colorButtons1">
+                <button onclick="changeColor(1, '#EEE7DA', '#C6A969', '#F1E4C3', '#597E52')" style="background-color: #C6A969;"> </button>
+                <button onclick="changeColor(1, '#000000', '#FFE4C9', '#E78895', '#BED1CF')" style="background-color: #FFE4C9;"> </button>
+                <br>
+                <button onclick="changeColor(1, '#FE7A36', '#3652AD', '#280274', '#E9F6FF')" style="background-color: #3652AD;"> </button>
+                <button onclick="changeColor(1, '#9EC8B9', '#092635', '#1B4242', '#5C8374')" style="background-color: #092635;"> </button>
+            </div>
+        </div>
+    </div> 
+
+    <div class="container fonta">
+        <div class="slides">
+            <h2>Hero Converter</h2>
+            <div class="hero-con" id="heroConverter">
+                <input type="text" id="conversionValue" placeholder="Enter value">
+                <select id="conversionType">
+                    <option value="kilograms">Kilograms to Pounds</option>
+                    <option value="pounds">Pounds to Kilograms</option>
+                </select>
+                <button onclick="convert()">Convert</button>
+                <span id="conversionResult"></span>
+                <span id="conversionUnit"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="slides">
+            <h2>MinMaxSum</h2>
+            <form class="hero-con" id="numberForm">
+                <label for="numberInput" id="conversionUnit">Enter a series of numbers:</label>
+                <br><br>
+                <input type="text" id="numberInput" placeholder="e.g., 1, 2, 3, 4, 5">
+                <button type="button" onclick="calculate()">Calculate</button>
+            </form>
+            <div id="results"></div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="slides">
+            <h2>MagicBox</h2>
+            <div class="textbox-container">
+                <textarea id="textArea" rows="20" cols="70"></textarea>
+            </div>
+            <div class="buttons-container">
+                <button id="clearBtn" class="magic-btn">Clear All</button>
+                <button id="toggleCaseBtn" class="magic-btn">Capitalize</button>
+                <button id="sortBtn" class="magic-btn">Sort</button>
+                <button id="reverseBtn" class="magic-btn">Reverse</button>
+                <button id="stripBlankBtn" class="magic-btn">Strip Blank</button>
+                <button id="addNumbersBtn" class="magic-btn">Add Numbers</button>
+                <button id="removeNumbersBtn" class="magic-btn">Remove Numbers</button>
+
+                <button id="shuffleBtn" class="magic-btn">Shuffle</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
